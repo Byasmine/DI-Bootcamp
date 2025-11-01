@@ -1,17 +1,14 @@
 
 # Execrice 1 :
 print("Execrice 1 :")
-
-print("Hello World \n"*5)
+print("Hello World \n"*4)
 
 # Execrice 2 :
 print("Execrice 2 :")
-
 print((99^3)* 8)
 
 # Execrice 3 :
 print("Execrice 3 :")
-
 #False
 #True
 #False
@@ -25,7 +22,6 @@ print ("Hello" == "hello")
 
 # Execrice 4 :
 print("Execrice 4 :")
-
 computer_brand = "Apple"
 print(f"I have an {computer_brand} computer")
 
