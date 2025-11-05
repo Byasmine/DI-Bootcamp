@@ -48,13 +48,17 @@ number = 1.5
 while number <= 5:
     mixed_list.append(number)
     number += 0.5
-print("List of floats from 1.5 to 5 : ", mixed_list)
+
+clean_list = [int(num) if num.is_integer() else num for num in mixed_list] #converting float to int if it's whole number
+print("List of floats from 1.5 to 5 : ", clean_list)
 
 #or using range
 mixed_list2 = []
 for i in range(3, 11): #3 to 10
     mixed_list2.append(i / 2) #dividing by 2 to get float values
-print("List of floats from 1.5 to 5 using range : ", mixed_list2)
+
+clean_list2 = [int(num2) if num2.is_integer() else num2 for num2 in mixed_list2] #converting float to int if it's whole number
+print("List of floats from 1.5 to 5 : ", clean_list2)
 
 #Exercice 5:
 print("Exercice 5 :")
@@ -91,7 +95,7 @@ else:
     print("You chose a new fruit. I hope you enjoy it!")    
 
 #Exercice 8:
-print("Exercice 8 :")
+print("Exercice 8 :") #Pizza Toppings
 toppings = []
 price_per_topping = 2.5
 base_price = 10
