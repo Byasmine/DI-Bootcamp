@@ -59,11 +59,15 @@ def show_magicians(magician_names):
 
 show_magicians(magician_names)
 
-def make_great(magician_names):
+def great_magicians(magician_names):
     for index,name in enumerate (magician_names):
         print(f"{index} : {name} the Great ")
 
-make_great(magician_names)
+great_magicians(magician_names)
+
+# great_magicians = list(map(lambda name: name + " the Great", magician_names))
+# print(great_magicians)
+
 
 #Exercise 7 :Temperature Advice
 print("Exercise 7 : ")
